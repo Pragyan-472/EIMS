@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            form
+            {
+                background-color: white;
+            }
+            .imgcontainer
+            {
+                padding: 10px;
+            }
+            .container
+            {
+                height:175px;
+                width: 300px;
+                padding: 10px;
+            }
+            .new
+            {
+                padding: 4px;
+            }
+            .forgot
+            {
+                padding: 6px;
+            }
+            
+        </style>
+    </head>
+    <body style="background-color: #c5dee3">
+    <center>
+        <h1>Student Login</h1>
+        <form id="registration-form" action="login.jsp" method="post" style="box-sizing: border-box;border: 3px solid; display: inline-block ">
+            <div class="imgcontainer">
+                <img src="user.svg" class="img-circle" height="100">
+            </div>
+            <div class="container">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="text" class="form-control" name="p1" placeholder="email">
+            </div>
+                <div class="input-group"> 
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input type="text" class="form-control" name="p2" placeholder="password">
+                </div>
+                <div class="container">
+                    <button type="submit" class="btn btn-success">Login</button>
+                    <div class="forgot">
+                        <a href="forgot.html">forgot password</a>
+                    </div>
+                    <div class="new">
+                     <p> Not Registered? <a href="createaccount.html">Create an account</a></p>
+                    </div>
+            </div>
+              
+            </div>
+        </form>
+    </center>
+
+    </body>
+</html>
